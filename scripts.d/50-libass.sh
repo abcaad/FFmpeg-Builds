@@ -15,6 +15,7 @@ ffbuild_dockerbuild() {
         --disable-shared
         --enable-static
         --with-pic
+        --enable-asm
     )
 
     if [[ $TARGET == win* || $TARGET == linux* ]]; then
