@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPT_REPO="https://github.com/abcaad/libass.git"
-SCRIPT_COMMIT="f1184cb09aa89c550e0c4ed592424c6d111d2c41"
+SCRIPT_COMMIT="407fc98c8220fe715a639a64445e767b85f9fece"
 
 ffbuild_enabled() {
     return 0
@@ -15,7 +15,6 @@ ffbuild_dockerbuild() {
         --disable-shared
         --enable-static
         --with-pic
-        --enable-asm
     )
 
     if [[ $TARGET == win* || $TARGET == linux* ]]; then
