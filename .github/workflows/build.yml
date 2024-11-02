@@ -186,8 +186,8 @@ jobs:
         id: imagename
         run: |
           IMG="${GITHUB_REPOSITORY,,}/${{ matrix.target }}-${{ matrix.variant }}"
-          echo "name=ghcr.io/${IMG/ /-}" >> $GITHUB_OUTPUT
-          echo "rawname=${IMG/ /-}" >> $GITHUB_OUTPUT
+          echo "name=ghcr.io/${IMG// /-}" >> $GITHUB_OUTPUT
+          echo "rawname=${IMG// /-}" >> $GITHUB_OUTPUT
       - name: Get download cache key
         id: dl_cache
         run: |
